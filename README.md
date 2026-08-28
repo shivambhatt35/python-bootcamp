@@ -3,7 +3,6 @@
 A beginner-friendly, hands-on collection of Python lessons, examples, and exercises designed to build a strong programming foundation. This repository progresses from Python fundamentals to practical data analysis, with an emphasis on **learning by writing and experimenting with code**.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![PRs](https://img.shields.io/badge/PRs-Welcome-orange)
 
