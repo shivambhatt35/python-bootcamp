@@ -1,0 +1,126 @@
+
+# WORKSHEET - 1
+https://bcourses.berkeley.edu/courses/1557109/files/95155322?module_item_id=17804484
+
+# Ques 1
+
+1. In a new Python script, make variables for your name, age,and height, then use an
+f-string to print them within one sentence as if you are introducing yourself. Print age
+with no decimal points and height with one decimal point.
+"""
+
+name = 'Shivam'
+age = 27
+height = 173
+
+print(f'Hello, my name is {name}. I am {age} years old and I am {height} cm tall')
+
+print(f'{age:.0f}')
+print(f'{height:.1f}')
+
+"""# Ques 2
+
+2. Ask the user to input the year, then the day, then the time. Print them in a print
+statement with an f-string, and print whether the year the user input was true (2026) or
+false (anything else). Does your code still work if the user adds a space before or after
+2026 (e.g. entering ’ 2026’ or ’2026 ’)?
+
+"""
+
+year = input("Input the year")
+day = input("Input the day")
+time = input("Input the time")
+
+print(f'The year is {year}, the day is {day} and the time is {time}')
+
+print(year == 2026)
+print(year == '2026')
+
+# No code does not work if there is space
+
+print(year.strip() == "2026")
+
+"""# Ques 3
+
+3. Set x to be 61, y to be 50, and z to be 11. Does Python think that x minus y is equal
+to z? Next, divide each of them by 10∗. Does Python still think x minus y is equal to z?
+
+
+"""
+
+x, y, z = 61, 50, 11
+
+print((x-y)==z)
+print(f'The expression x-y==z is: {(x-y)==z}')
+
+x /=10
+y /=10
+z /=10
+
+print((x-y)==z)
+
+"""# Ques 4
+
+4. Similarly, start with b = 1. Set c equal to an integer of your choice. Check that Python
+agrees c*b ==c. Then divide b by 10, and check if c*b == c/10. Play around with the
+value of c to see where Python gets things right or wrong.
+Next, using y = round(x, n) sets y equal to x rounded to n decimal points precision. Can
+you use this to fix the issue reasonably
+"""
+
+b, c = 1, 3
+
+print((c*b) == c)
+
+b/=10
+
+print((c*b)==(c/10))
+
+x, n = 3.14798234, 2
+y = round(x, n)
+
+print(y)
+
+round_left_value = round((c*b),2)
+round_right_value = round(c/10,2)
+print(round_left_value == round_right_value)
+
+"""# Ques 5
+
+Create variables for two strings and two lists of your choice. Let’s see what happens
+with different operators on these: Can you...
+1. Add two strings or two lists together with’+’ ?
+2. Subtract two strings or lists from one another with ’-’ ?
+3. Multiply a string or list by an integer?
+4. Multiply two strings or two lists together with ’*’ ?
+5. Divide two strings or two lists by one another with ’/’ ?
+∗ by ”divide each of them by 10” I mean update x as x = x/10, and so on!
+"""
+
+string1, string2 = "Shivam", "Bhatt"
+list1, list2 = ["first_name"], ["second_name"]
+
+string_add = string1+string2
+print(string_add)
+
+list_add = list1+list2
+print(list_add)
+
+# It will show an error
+# print(string1-string2)
+# print(list1-list2)
+
+print(string1*3)
+print(list1*3)
+
+# It will show a Typeerror
+# print(string1*string2)
+
+# It will show an Typeerror
+# print(string1/string2)
+# print(list1/list2)
+
+# It will show an Typeerror
+# print(string1/10)
+# print(list1/10)
+
